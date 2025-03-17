@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@tailwindcss/cli": "^4.0.14",
     "clsx": "^2.1.1",
     "lightningcss": "^1.29.3",
     "lightningcss-win32-x64-msvc": "^1.29.3",
@@ -20,7 +21,7 @@
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
-    "@tailwindcss/postcss": "^4",
+    "@tailwindcss/postcss": "^4.0.14",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
