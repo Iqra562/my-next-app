@@ -1,10 +1,15 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
+  --background: #000;
   --foreground: #171717;
 }
 
+body {
+
+  background-color: var(--background);
+  color: var(--foreground);
+}
 @theme inline {
   --animate-spotlight: spotlight 2s ease 0.75s 1 forwards;
 }
@@ -16,7 +21,7 @@
   }
   100% {
     opacity: 1;
-    transform: translate(-50%, -40%) scale(1);
+    transform: translate(-50%, -40%) scale(2.2);
   }
 }
 
