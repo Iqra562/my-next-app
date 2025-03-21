@@ -1,3 +1,4 @@
+import { cn } from "@/utils/utils";
 import { InfiniteMovingCards } from "./ui/infinite-moving-cards";
 
 
@@ -37,9 +38,21 @@ function TestmonialCards(){
 
 
 return(
-    
-    <div className="h-[40rem] w-full dark:bg-black dark:bg-grid-white/[0.2] relative flex flex-col items-center justify-center overflow-hidden">
-    <h2 className="text-3xl font-bold text-center mb-8 z-10">Hear our Harmony: Voices of success</h2>
+    <>
+    <div className="relative flex h-[50rem] w-full items-center justify-center bg-white dark:bg-black">
+      <div
+        className={cn(
+          "absolute inset-0",
+          "[background-size:40px_40px]",
+          "[background-image:linear-gradient(to_right,#e4e4e7_1px,transparent_1px),linear-gradient(to_bottom,#e4e4e7_1px,transparent_1px)]",
+          "dark:[background-image:linear-gradient(to_right,#262626_1px,transparent_1px),linear-gradient(to_bottom,#262626_1px,transparent_1px)]",
+        )}
+      />
+      {/* Radial gradient for the container to give a faded look */}
+      <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] dark:bg-black"></div>
+      <div className="relative z-20 bg-gradient-to-b from-neutral-200 to-neutral-500 bg-clip-text py-8 text-4xl font-bold text-transparent sm:text-7xl">
+      <div className=" w-full dark:bg-black dark:bg-grid-white/[0.2] relative flex flex-col items-center justify-center overflow-hidden">
+    <h2 className="text-3xl font-bold text-center mb-8 z-10 text-white">Hear our Harmony: Voices of success</h2>
     <div className="flex justify-center w-full overflow-hidden px-4 sm:px-6 lg:px-8">
      
         <InfiniteMovingCards
@@ -49,6 +62,10 @@ return(
       />
     </div>
     </div>
+      </div>
+    </div>
+    
+    </>
 )
 }
 export default TestmonialCards;
