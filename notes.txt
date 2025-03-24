@@ -1,1 +1,3 @@
 [] --- dynamic route . a route which we only defines one ,  but which is then capable of rendering different pages
+
+Image --- next js has built  in img component which helpd to outpu images in a more opmized way , but  by default it has attribute which is loading= 'lazy' which makes sure that image is lazy loaded and therefore , only loaded if it is really visible , and when we  want to tell next js and the browser tha this image should always be loaded  as quickly as possible to make sure we  got no unnecessary content shift when the page loads so we should add 'priority' attribute
