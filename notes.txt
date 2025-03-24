@@ -1,0 +1,1 @@
+[] --- dynamic route . a route which we only defines one ,  but which is then capable of rendering different pages
